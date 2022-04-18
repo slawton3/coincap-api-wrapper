@@ -1,6 +1,5 @@
 import PublicClient from "./public-client";
 import { IAccounts, IAccount } from "./types/interfaces";
-import axios from "axios";
 const fs = require('fs');
 
 
@@ -100,15 +99,11 @@ class PrivateClient extends PublicClient {
 
     public addAsset(asset: string, balance: string) {
         let tempBalance = this.getAssetBalance(asset);
-        console.log("ADD ASSET => ", asset, balance); 
         if(tempBalance == null){
-            console.log("NULL TEMP");
             for(let i = 0; i < this.accountsObj.accounts.length; i++) {
                 if(this.accountsObj.accounts[i].username === this.account.username){
                     this.accountsObj.accounts[i].assets.push({ "asset_id": asset, "balance": balance });
-                    console.log("PUSH ASSET", this.accountsObj);
                     this.writeToFile(this.accountsObj);
-                    console.log("Asset has been added.");
                     return "Asset has been added.";
                 }
             }

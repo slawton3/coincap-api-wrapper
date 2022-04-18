@@ -2,7 +2,7 @@ These are examples of how to use the public and private clients.
 
 PublicClient
 ```
-import PublicClient from "./public-client";
+import PublicClient from "./out";
 
 let client = new PublicClient();
 
@@ -18,7 +18,7 @@ client.getMarkets();
 
 PrivateClient
 ```
-import PrivateClient from "./private-client";
+import PrivateClient from "./out";
 
 const client = new PrivateClient("test");
 
