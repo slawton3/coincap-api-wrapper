@@ -38,6 +38,7 @@ To add or remove tests in this suite, modify the src/test/test.ts file.
 
 ## Further Improvements:
 
+Add support for API keys
 Change data storage to normalized database with secure authentication.
 More validation for inputs to ensure clean requests.
 Add functionality to account.
