@@ -15,10 +15,17 @@ Below you will find the instructions to install and start using this client.
 git clone https://github.com/slawton3/coincap-api-wrapper
 
 ## Install YARN packages
+
+cd coincap-api-wrapper
+
 yarn install
 
 
 ## Usage
+
+Modify the src/index.ts file to test out calls to the clients.
+
+yarn start
 
 Public Client: This client is for basic API calls without any data persistence or writing to the database.
 

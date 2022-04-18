@@ -2,14 +2,14 @@ import PrivateClient from "./private-client";
 
 const client = new PrivateClient("test");
 
-client.addAccount("other-user");
+console.log(client.addAccount("other-user"));
 
-client.addAsset("ethereum", "30");
+console.log(client.addAsset("ethereum", "30"));
 
-client.switchAccount("other-user");
+console.log(client.switchAccount("other-user"));
 
-client.addAsset("ethereum", "30");
+console.log(client.addAsset("ethereum", "30"));
 
-client.addAsset("bitcoin", "30");
+console.log(client.addAsset("bitcoin", "30"));
 
-client.getAccountAssets();
+console.log(client.getAccountAssets());
