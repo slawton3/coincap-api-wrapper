@@ -25,6 +25,8 @@ yarn install
 
 Modify the src/index.ts file to test out calls to the clients.
 
+yarn build
+
 yarn start
 
 Public Client: This client is for basic API calls without any data persistence or writing to the database.
