@@ -70,6 +70,8 @@ class PrivateClient extends PublicClient {
         if(account == null) {
             this.accountsObj.accounts.push({"username": username, "assets": []});
             this.writeToFile(this.accountsObj);
+            console.log("Account added.");
+            return "Account added";
         }
         else{
             console.log("Error, account already exists.");
