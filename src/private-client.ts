@@ -82,8 +82,8 @@ class PrivateClient extends PublicClient {
     public switchAccount(username: string){
         let account: any = this.getAccount(username);
         this.account = account;
-        console.log("Account switched to " + this.account + ".")
-        return "Account switched to " + this.account + ".";
+        console.log("Account switched to " + this.account.username + ".")
+        return "Account switched to " + this.account.username + ".";
     }
 
     public getAccountAssets() {
